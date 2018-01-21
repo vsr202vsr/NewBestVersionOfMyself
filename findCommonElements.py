@@ -65,8 +65,8 @@ if __name__ == "__main__" :
     in2 =[]
     random.seed(100)
     for i in range(n):
-        in1.append(random.randrange(n))
-        in2.append(random.randrange(n))    
+        in1.append(random.randrange(i+1))
+        in2.append(random.randrange(i+1))    
     
 #==============================================================================
 #     in3= removeDuplicates(in1)
@@ -76,7 +76,7 @@ if __name__ == "__main__" :
     in4= np.array(in2)
 #    print(in3,in4)
     start = time.time()
-    count = findCommonElements2(in3, in4);
+    count = findCommonElements2(in3, in4)
     print(count);
     end = time.time()
     print(end - start)
